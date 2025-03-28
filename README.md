@@ -91,7 +91,7 @@ database.expenseDao().insert(expense);
 ### ⏰ 푸시 알림 화면  
 등록된 일정 시간이 되면 자동으로 푸시 알림이 표시되어 사용자가 일정을 놓치지 않도록 합니다.
 
-<<img src="https://github.com/user-attachments/assets/72aaeb7a-a945-45d0-b8fa-2ea89f0efc97" width="238" height="391"/>
+<img src="https://github.com/user-attachments/assets/72aaeb7a-a945-45d0-b8fa-2ea89f0efc97" width="238" height="391"/>
 
 ---
 
