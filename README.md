@@ -41,7 +41,24 @@
 
 ---
 
-## 3. 🧠 코드 구성
+## 3. 🛠 기술 스택
+
+<img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white"/> 
+<img src="https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white"/> 
+<img src="https://img.shields.io/badge/Room-6DB33F?style=for-the-badge&logo=sqlite&logoColor=white"/> 
+<img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=gradle&logoColor=white"/> 
+<img src="https://img.shields.io/badge/XML-FF6600?style=for-the-badge&logo=w3c&logoColor=white"/> 
+
+- **Java**: 안드로이드 네이티브 애플리케이션 개발 언어
+- **Android SDK**: UI/UX 구성 및 앱의 핵심 기능 구현
+- **Room (SQLite 기반)**: 일정 및 지출 정보를 저장하는 로컬 DB 시스템
+- **AlarmManager + BroadcastReceiver**: 정해진 시간에 푸시 알림을 보내는 시스템 구성
+- **Gradle**: 종속성 관리 및 빌드 자동화 도구
+- **XML Layout**: 화면 레이아웃 및 UI 구성 정의
+
+---
+
+## 4. 🧠 코드 구성
 
 ```java
 // addschedule.java
@@ -55,7 +72,7 @@ Expense expense = new Expense(amount, category, date);
 database.expenseDao().insert(expense);
 ```
 ---
-## 4. 🖼 실행 화면
+## 5. 🖼 실행 화면
 
 ### 📅 메인 캘린더 화면  
 사용자가 날짜를 클릭해 일정을 추가하거나 확인할 수 있는 기본 화면입니다.
@@ -85,7 +102,7 @@ database.expenseDao().insert(expense);
 
 ---
 
-## 5. ▶ 실행 방법
+## 6. ▶ 실행 방법
 
 이 프로젝트는 Android Studio에서 바로 실행할 수 있는 구조입니다.
 
@@ -127,18 +144,3 @@ MainActivity.java 또는 AddSchedule.java를 열고
 캘린더 화면이 기본으로 뜨며,
 
 날짜 클릭 → 일정 추가 → 저장 → 푸시 알림 발생 흐름을 따라 테스트할 수 있습니다
-
----
-
-## 6. 🧰 기술 스택
-
-| 분류              | 사용 기술 및 설명                                                                 |
-|-------------------|------------------------------------------------------------------------------------|
-| **개발 언어**       | Java - Android 네이티브 앱 개발에 사용                                           |
-| **개발 환경**       | Android Studio - 코드 작성, 디버깅, UI 디자인 등 전반적인 개발 툴                  |
-| **UI 구성**        | Android XML Layout - 일정/지출 입력 및 달력 화면 구성                            |
-| **데이터 저장소**    | Room Database - SQLite 기반의 로컬 데이터베이스, 일정/지출 정보를 영구 저장          |
-| **알림 시스템**     | AlarmManager + BroadcastReceiver - 사용자가 등록한 일정 시간에 푸시 알림 발생       |
-| **버전 관리**       | Git / GitHub - 프로젝트 관리 및 협업을 위한 버전 관리 시스템 사용                  |
-| **디바이스 지원**   | Android 6.0 (API 23) 이상                                                         |
-| **빌드 시스템**     | Gradle - 프로젝트 종속성 및 빌드 설정
